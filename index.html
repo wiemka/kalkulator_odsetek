@@ -17,7 +17,7 @@
         <select id="okres_kapitalizacji">
         <option value="12">Miesięcznie</option>
         <option value="4">Kwartalnie</option>
-        <option value="1" selected="selected">Rocznie</option>
+        <option value="1" selected>Rocznie</option>
         </select><br><br>
 
         <label for="ilosc_lat">Ilość lat:</label>
@@ -26,9 +26,10 @@
         <label for="oprocentowanie">Stopa zwrotu w %:</label>
         <input id="oprocentowanie" type="number" value="10" min="0"><br><br>
 
-        <label><input type="checkbox" id="podatek" value="">Uwzględnij podatek Belki 19%</label><br><br>
+        <label for="podatek">Uwzględnij podatek Belki 19%</label>
+        <input type="checkbox" id="podatek" value=""><br><br>
 
-        <input type="submit" value="oblicz" id="Oblicz">
+        <button type="button" onclick="oblicz();">Oblicz</button>
     </form>
     <p id="wynik"></p>
     <script src="js/kalkulator.js"></script>
