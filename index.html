@@ -11,14 +11,19 @@
     <h2>Wprowadć dane</h2>
     <form id="kalkulator">
         <label for="wplata">Wpłata w PLN:</label>
-        <input id="wplata" type="number" value="0" min="100">
-    </form>
-    <label for="okres_kapitalizacji">Częstotliwosć kapitalizacji:</label>
-    <select id="okres_kapitalizacji">
+        <input id="wplata" type="number" value="0" min="100"><br><br>
+
+        <label for="okres_kapitalizacji">Częstotliwosć kapitalizacji:</label>
+        <select id="okres_kapitalizacji">
         <option value="12">Miesięcznie</option>
         <option value="4">Kwartalnie</option>
         <option value="1" selected="selected">Rocznie</option>
-    </select>
+        </select><br><br>
+
+        <label for="ilosc_lat">Ilość lat:</label>
+        <input id="ilosc_lat" type="number" value="1" min="1"><br><br>
+
+    </form>
 
     <script src="js/kalkulator.js"></script>
 </body>
