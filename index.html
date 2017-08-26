@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator odsetek</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h2>Wprowadć dane</h2>
+    <form id="kalkulator">
+        <label for="wplata">Wpłata w PLN:</label>
+        <input id="wplata" type="number" value="0" min="100">
+    </form>
+    <label for="okres_kapitalizacji">Częstotliwosć kapitalizacji:</label>
+    <select id="okres_kapitalizacji">
+        <option value="12">Miesięcznie</option>
+        <option value="4">Kwartalnie</option>
+        <option value="1" selected="selected">Rocznie</option>
+    </select>
+
+    <script src="js/kalkulator.js"></script>
+</body>
+
+</html>
